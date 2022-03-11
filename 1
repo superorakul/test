@@ -233,8 +233,7 @@ def print_supported_versions():
 
 if __name__ == '__main__':
 
-    do_banner()
-
+   
     top_parser = argparse.ArgumentParser(description='SonicWall SMA-100 Series Stack-Buffer Overflow Exploit (CVE-2021-20038)')
     required_args = top_parser.add_argument_group('required arguments')
     required_args.add_argument('--rhost', action="store", dest="rhost", required=True, help="The IPv4 address to connect to")
